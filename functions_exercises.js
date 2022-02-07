@@ -6,16 +6,26 @@
 //We sleep in if it is not a weekday or we are on vacation. Return true if we sleep in.
 
 // 1st variant
-// function sleepIn(weekday, vacation){
-//   if ((weekday !== true) || (vacation == true)) {
-//     return true
-//   }else {
-//     return false
-//   }
-// }
+function sleepIn(weekday, vacation){
+  if ((weekday !== true) || (vacation == true)) {
+    return true
+  }else {
+    return false
+  }
+}
 
 //2nd
 
-// function sleepIn(weekday, vacation) {
-//   return (!weekday || vacation)
-// }
+function sleepIn(weekday, vacation) {
+  return (!weekday || vacation)
+}
+
+//Problem 2: MONKEY TROUBLE
+
+//We have two monkeys, a and b, and the parameters aSmile and bSmile indicate if
+//each is smiling. We are arein trouble if they are both smiling or if neither of them
+//is smiling. Return true if we are in trouble.
+
+function monkeyTrouble(aSmile,bSmile) {
+  return (aSmile && bSmile) || (!aSmile && !bSmile)
+}

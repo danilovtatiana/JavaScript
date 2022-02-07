@@ -9,3 +9,7 @@ function helloYou(name){ //function with one parameter
 function addNum(num1, num2){ // function with two parameters
   console.log(num1+num2);
 }
+
+function helloSomeone(name="David"){ //function with default parameter
+  console.log("Hello "+name);
+}

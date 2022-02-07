@@ -17,3 +17,8 @@ function helloSomeone(name="David"){ //function with default parameter
 function formal(name="Sam", title="Sir"){ //retunr keyword
   return title + " " + name;
 }
+
+function timesFive(numInput){ //multiplication function
+  var result = numInput * 5;
+  return result;
+}

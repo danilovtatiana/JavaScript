@@ -13,3 +13,7 @@ function addNum(num1, num2){ // function with two parameters
 function helloSomeone(name="David"){ //function with default parameter
   console.log("Hello "+name);
 }
+
+function formal(name="Sam", title="Sir"){ //retunr keyword
+  return title + " " + name;
+}

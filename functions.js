@@ -19,6 +19,21 @@ function formal(name="Sam", title="Sir"){ //retunr keyword
 }
 
 function timesFive(numInput){ //multiplication function
+  //local scope of the function
   var result = numInput * 5;
   return result;
 }
+
+//global scope
+
+var v = "GLOBAL V"
+var stuff = "GLOBAL STUFF"
+
+function fun(stuff){
+  console.log(v);
+  stuff = "Reassign stuff inside func";
+  console.log(stuff);
+}
+
+fun(); // GLOBAL V Reassign....
+console.log(stuff); //GLOBAL STUFF
